@@ -1,0 +1,25 @@
+2024-08-23 00:49:42 [31merror[39m: [31mThis is a error log message[39m
+2024-08-23 00:49:44 [35mfatal[39m: [35mThis is a fatal log message[39m
+2024-09-03 22:34:23 [31merror[39m: [31mFailed to lookup view "home" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-03 22:34:25 [31merror[39m: [31mFailed to lookup view "home" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-03 22:34:26 [31merror[39m: [31mFailed to lookup view "home" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-03 22:50:01 [31merror[39m: [31mUnknown authentication strategy "google"[39m
+2024-09-03 23:16:05 [31merror[39m: [31mFailed to lookup view "userPurchases" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-04 00:06:28 [31merror[39m: [31mFailed to lookup view "userPurchases" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-04 00:07:34 [31merror[39m: [31mFailed to lookup view "userPurchases" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-04 00:07:35 [31merror[39m: [31mFailed to lookup view "userPurchases" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-04 17:59:40 [31merror[39m: [31mProducto con ID 66b54a70ef08530b64b4d5c8 no encontrado[39m
+2024-09-04 19:12:36 [31merror[39m: [31mFailed to lookup view "/" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-04 19:12:41 [31merror[39m: [31mFailed to lookup view "/" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-04 19:12:52 [31merror[39m: [31mFailed to lookup view "" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-05 10:59:47 [31merror[39m: [31mNo se pudo obtener el email del usuario de GitHub.[39m
+2024-09-05 11:05:36 [31merror[39m: [31mFailed to lookup view "" in views directory "C:\Users\USUARIO\Documents\CODERHOUSEVALE\BACKEND\proyectoFinal\src\views"[39m
+2024-09-05 11:20:24 [31merror[39m: [31mNo se pudo obtener el email del usuario de GitHub.[39m
+2024-09-05 17:51:50 [31merror[39m: [31mNo se pudo obtener el email del usuario de GitHub.[39m
+2024-09-05 17:56:42 [31merror[39m: [31mNo se pudo obtener el email del usuario de GitHub.[39m
+2024-09-05 18:20:57 [31merror[39m: [31mThis is a error log message[39m
+2024-09-05 18:21:00 [35mfatal[39m: [35mThis is a fatal log message[39m
+2024-09-05 18:26:43 [31merror[39m: [31mIntento de agregar al carrito un producto propio por jimenez.valentina2002@gmail.com[39m
+2024-09-09 11:37:08 [31merror[39m: [31mMockingProduct validation failed: price: Cast to Number failed for value "hh" (type string) at path "price", stock: Cast to Number failed for value "hh" (type string) at path "stock"[39m
+2024-09-09 11:37:18 [31merror[39m: [31mMockingProduct validation failed: price: Cast to Number failed for value "hh" (type string) at path "price", stock: Cast to Number failed for value "hh" (type string) at path "stock"[39m
+2024-09-09 11:37:24 [31merror[39m: [31mMockingProduct validation failed: stock: Cast to Number failed for value "hh" (type string) at path "stock"[39m

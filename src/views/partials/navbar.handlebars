@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" style="margin-bottom: 15px;">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="/products">
+            <img src="https://cdn.portalfruticola.com/2018/05/cf9ae791-walmart-logo-promo.png" width="120px" alt="Logo Walmart" style="border-radius: 8px;">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="/products">Productos</a>
+                </li>
+                {{#if user}}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold dropdown-toggle" href="#" id="otherOptionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Más Opciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="otherOptionsDropdown">
+                            <li><a class="dropdown-item" href="/mockingProducts">mockingProducts</a></li>
+                            <li><a class="dropdown-item" href="/loggertestview">loggerTest</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="/api-docs">Swagger</a></li>
+                        </ul>
+                    </li>
+                {{/if}}
+                {{#if (equals user.role "admin")}}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold dropdown-toggle" href="#" id="adminDashboardDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Administración
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="adminDashboardDropdown">
+                            <li><a class="dropdown-item" href="/adminDashboard">Opciones</a></li>
+                            <li><a class="dropdown-item" href="/adminViewAllProducts">Listado de Productos</a></li>
+                            <li><a class="dropdown-item" href="/adminAddProduct">Agregar Producto</a></li>
+                            {{!-- <li><a class="dropdown-item" href="/adminChat">Administrar Usuarios</a></li> --}}
+                            <li><a class="dropdown-item" href="/chat">Mensajeria</a></li>
+                        </ul>
+                    </li>
+                {{/if}}
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                {{#if user}}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="{{user.profile_image}}" class="rounded-circle" style="width: 40px; height: 40px; margin-right: 8px;">
+                            {{user.first_name}}
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="/profile">Ver Perfil</a></li>
+                            <li><a class="dropdown-item" href="/profile/{{user._id}}">Editar Perfil</a></li>
+                            <li><a class="dropdown-item" href="/carts/{{user.cart._id}}">Carrito</a></li>
+                            <li><a class="dropdown-item" href="/chat">Mensajes</a></li>
+                            <hr class="dropdown-divider">
+                            {{#if (equals user.role "premium")}}
+                                <li><a class="dropdown-item" href="/adminAddProduct">Subir un Producto</a></li>
+                                <li><a class="dropdown-item" href="/adminViewAllProducts">Ver mis productos</a></li>
+                            {{/if}}
+                            {{#if (equals user.role "user")}}
+                                <li><a class="dropdown-item" href="/profile">Perfil de vendedor</a></li>
+                            {{/if}}
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/carts/{{user.cart._id}}">
+                            <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/chat">
+                            <i class="fa-solid fa-envelope fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn" id="logoutButton">
+                            <i class="fa-solid fa-right-from-bracket fa-lg"></i>
+                        </button>
+                    </li>
+                {{else}}
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="/">Iniciar Sesión</a>
+                    </li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script src="/js/logOut.js"></script>
