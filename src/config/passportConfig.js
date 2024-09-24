@@ -25,7 +25,7 @@ passport.use(new LocalStrategy({ usernameField: 'email' }, async (email, passwor
  passport.use(new GitHubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: "https://proyectofinalbackend-production-4db6.up.railway.app/api/sessions/github/callback"
+    callbackURL: "https://proyectofinalbackend-production-4db6.up.railway.app/auth/github/callback"
 }, async (accessToken, refreshToken, profile, done) => {
     try {
         if (!profile.emails || !profile.emails[0].value) {
