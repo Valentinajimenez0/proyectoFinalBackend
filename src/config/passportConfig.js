@@ -22,7 +22,7 @@ passport.use(new LocalStrategy({ usernameField: 'email' }, async (email, passwor
     }
 }))
 
-const isProduction = process.env.LOGGER_ENV
+const isProduction = process.env.LOGGER_ENV === 'production'
 console.log(isProduction)
 
  passport.use(new GitHubStrategy({
